@@ -18,7 +18,8 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-This Bot is exclusively made for Movies Club Group .....
+*No one gonna help you 🤣🤣🤣🤣*
+*For any movies join channel and group given below 😜😜*
 
 """
 
@@ -133,7 +134,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="👥 Group", url="https://t.me/joinchat/AAAAAEkPrah1asIHMBiURA"), InlineKeyboardButton(text="🔔 Channel", url="https://t.me/joinchat/UbomgFXMHwiHf2SN")]]))
+                    [[InlineKeyboardButton(text="👥 Group", url="https://t.me/joinchat/SQ-tqFpvuar1WZgd"), InlineKeyboardButton(text="🔔 Channel", url="https://t.me/joinchat/V5uAlg7mibzfklmh")]]))
 
     else:
         update.effective_message.reply_text("ഹായ് മച്ചാൻ,  എന്താണ്??")
